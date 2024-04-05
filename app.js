@@ -25,8 +25,8 @@ const html = `
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0; /* New */
-            color: #333; /* New */
+            margin: 0;
+            color: #333; 
         }
 
         .login-form {
@@ -64,12 +64,12 @@ const html = `
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            transition: border-color 0.3s ease; /* New */
+            transition: border-color 0.3s ease; 
         }
 
         .input-group input:focus {
-            border-color: #1a73e8; /* New */
-            outline: none; /* New */
+            border-color: #1a73e8; 
+            outline: none;
         }
 
         button {
@@ -80,18 +80,18 @@ const html = `
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            transition: background-color 0.3s ease; /* New */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* New */
+            transition: background-color 0.3s ease; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
         }
         button:hover {
             background-color: #0c63d6;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* New */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
 <body>
     <center>
-        <h1>Trần Xuân Trường</h1>
+        <h1>Trần Xuân Trường-22810310009</h1>
         <div class="login-form">
             <img src="https://logo.clearbit.com/google.com" alt="Google Logo" class="logo">
             <h2>Đăng nhập</h2>
