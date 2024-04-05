@@ -18,80 +18,86 @@ const html = `
     <title>Tài khoản Google</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .hidden { display: none; } 
+        .hidden { display: none; }
         body {
-            background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+            /* Updated background for a more appealing gradient */
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            color: #333; 
+            color: #333;
+            font-family: Arial, sans-serif;
         }
-
+    
         .login-form {
             background-color: #fff;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px; /* More rounded corners */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             text-align: center;
-            width: 300px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* New */
+            width: 280px; /* Slightly narrower */
+            transition: all 0.3s ease;
         }
-
+    
         .login-form:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* New */
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
-
+    
         .login-form .logo {
-            width: 100px;
+            width: 80px; 
             margin-bottom: 20px;
         }
-
+    
         .input-group {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             text-align: left;
         }
-
+    
         .input-group label {
             display: block;
             margin-bottom: 5px;
+            font-size: 14px; 
         }
-
+    
         .input-group input {
-            width: 100%;
-            padding: 10px;
+            width: calc(100% - 24px); 
+            padding: 10px 12px;
+            font-size: 14px;
             border: 1px solid #ccc;
-            border-radius: 4px;
-            transition: border-color 0.3s ease; 
+            border-radius: 20px; 
+            transition: border-color 0.3s ease;
         }
-
+    
         .input-group input:focus {
-            border-color: #1a73e8; 
+            border-color: #f5576c;
             outline: none;
         }
-
+    
         button {
-            width: 100%;
-            padding: 10px;
-            background-color: #1a73e8;
+            width: calc(100% - 24px); 
+            padding: 10px 12px;
+            background-image: linear-gradient(to right, #f093fb, #f5576c);
             color: white;
             border: none;
-            border-radius: 4px;
+            border-radius: 20px; 
             cursor: pointer;
-            transition: background-color 0.3s ease; 
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
         }
         button:hover {
-            background-color: #0c63d6;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
         }
     </style>
+    
 </head>
 <body>
     <center>
-        <h1>Trần Xuân Trường-22810310009</h1>
+        <h1>Trần Xuân Trường</h1>
         <div class="login-form">
             <img src="https://logo.clearbit.com/google.com" alt="Google Logo" class="logo">
             <h2>Đăng nhập</h2>
@@ -125,5 +131,6 @@ const html = `
     </script>
 </body>
 </html>
+
 
 `
